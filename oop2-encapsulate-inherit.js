@@ -6,7 +6,7 @@
 //     -Prevent the properties from being accessed by outside code, using the encapsulation concept of "private variables".  Create methods that return the values of these private variables in case other pieces of the code need to access the data of the 4 classes.  Also create methods that allow outside code to "set" new values for the properties on the classes, without directly manipulating the values themselves.
 
 class Book {
-  #author;
+  author;
   #publisher = [];
   #reviews = []
   constructor(author, publisher) {
@@ -43,7 +43,8 @@ class Author {
   #books = [];
   #reviews = []
   constructor(name, books) {
-    // (this.#name = name), (this.#books = books);
+    (this.#name = name)
+    //  (this.#books = books);
   }
   //getters
   getName() {
